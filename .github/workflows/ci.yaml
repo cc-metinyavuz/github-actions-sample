@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     path:
-      - 'github-actions-sample/**'
+      - 'cc-metinyavuz/**'
     branches:
       - 'main'
 
