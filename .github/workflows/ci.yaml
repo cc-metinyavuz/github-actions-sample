@@ -22,7 +22,6 @@ jobs:
           java-version: '17'
 
       - name: Build
-        working-directory: 'github-actions-sample'
         run: |
           ./gradlew build
       - name: Login in to ghcr
