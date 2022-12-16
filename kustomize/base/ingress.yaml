@@ -18,7 +18,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: github-actions-sample
+            name: github-actions-sample-2
             port:
               number: 8080
 
