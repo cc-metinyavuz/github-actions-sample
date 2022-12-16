@@ -1,0 +1,16 @@
+project: kustomize-microservices
+source:
+  repoURL: 'https://github.com/cc-metinyavuz/github-actions-sample.git'
+  path: kustomize/overlays/production #To use Kustomize with an overlay, point your path to the overlay.
+  targetRevision: HEAD
+  kustomize:
+    namePrefix: production-
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: kustomize-spring-microservices
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  syncOptions:
+    - CreateNamespace=true
