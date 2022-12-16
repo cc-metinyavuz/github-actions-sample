@@ -10,7 +10,7 @@ spec:
         - name: github-actions-sample-2
           livenessProbe:
             httpGet:
-              path: /actuator/health
+              path: /actuator/health/liveness
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 3
@@ -18,5 +18,5 @@ spec:
             initialDelaySeconds: 20
             periodSeconds: 10
             httpGet:
-              path: /actuator/info
+              path: /actuator/health/readiness
               port: 8080
