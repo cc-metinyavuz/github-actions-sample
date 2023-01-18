@@ -22,7 +22,7 @@ public class DemoApplication {
 
 		@GetMapping
 		public String hello() {
-			return "Hello";
+			return "Hello from new World";
 		}
 	}
 }
