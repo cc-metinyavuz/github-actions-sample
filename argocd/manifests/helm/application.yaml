@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: github-actions-sample
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/cc-metinyavuz/github-actions-sample:^0.1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
